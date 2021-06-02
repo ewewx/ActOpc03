@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Boxes </title>
+    
+</head>
+<body>
+   <header>        
+        <div id="logo"></div>
+        <nav id="botonera">
+            <ul class="nav1">
+                <li class="lista1"><a href="index.html">Inicio</a></li>
+                <li class="lista1"><a href="capacitaciones.html">Capacitaciones</a></li>
+                <li class="lista1"><a href="contacto.html">Contacto</a></li>
+                <li class="lista1"><a href="login.html">Login</a></li>
+            </ul>
+            
+        </nav>
+   </header>
+   <section>
+       <form name="cotiza">
+       <div class="items-fila1">
+       <div class="item-izq item1">
+           <div> <h2 class="titulos-coti">Toma Corrientes</h2></div>
+           <div> <h3>Precio unitario $350</h3></div>
+           <div> <input type="number" class="cantidades" id="tug" placeholder="Ingrese la cantidad de tomacorrientes a instalar" pattern="^[0-9]+"></div>
+       </div>
+       <div class="item-der item2">
+        
+            <div> <h2 class="titulos-coti2">Boca de Iluminación</h2></div>
+           <div> <h3>Precio unitario $350</h3></div>
+           <div> <input type="number" class="cantidades1" id="iug" placeholder="Ingrese la cantidad de bocas de luz a instalar" pattern="^[0-9]+"></div>
+         
+       </div>
+    </div>
+       <div class="items-fila2">
+       <div class="item-izq item3">
+        <div>
+            <div> <h2 class="titulos-coti">Canalización x metro</h2></div>
+           <div> <h3>Precio unitario $200</h3></div>
+           <div> <input type="number" class="cantidades" id="canaliz" placeholder="Ingrese la cantidad de metros a instalar" pattern="^[0-9]+"></div>
+        </div>
+        
+       </div>
+       <div class="item-der item4">
+        <div>
+            <div> <h2 class="titulos-coti2">Instalacion de tablero</h2></div>
+           <div> <h3>Precio unitario $5000</h3></div>
+           <div> <input type="number" class="cantidades1" id="tablero" placeholder="Ingrese la cantidad de tableros a instalar" pattern="^[0-9]+"></div>
+        </div>
+        
+       </div>
+    </div>
+    <div class="items-fila3">
+       <div class="item-izq item5">
+        <div>
+            <div> <h2 class="titulos-coti">Interruptores Termomagnéticos</h2></div>
+           <div> <h3>Precio unitario $500</h3></div>
+           <div> <input class="cantidades" type="number"  id="termica" placeholder="Ingrese la cantidad de termicas a instalar" pattern="^[0-9]+"></div>
+        </div>
+        
+       </div>
+       <div class="item-der item6">
+        <div>
+            <div> <h2 class="titulos-coti2">Interruptores Diferenciales</h2></div>
+           <div> <h3>Precio unitario $600</h3></div>
+           <div> <input  class="cantidades1" type="number" id="diferencial"  placeholder="Ingrese la cantidad de diyuntores a instalar" pattern="^[0-9]+"></div>
+        </div>
+    </div>
+       </div>
+       <div class="items-fila4">
+       <div class="item-izq item7">
+        <div>
+            <div> <h2 class="titulos-coti">Javalinas</h2></div>
+           <div> <h3>Precio unitario $1000</h3></div>
+           <div> <input class="cantidades" type="number"  id="javalina" placeholder="Ingrese la cantidad de javalinas a instalar" pattern="^[0-9]+"></div>
+        </div>
+        
+       </div>
+       <div class="item-der item8">
+        <div>
+            <div> <h2 class="titulos-coti2">Ventiladores de Techo</h2></div>
+           <div> <h3>Precio unitario $1500</h3></div>
+           <div> <input class="cantidades1" type="number" id="venti" placeholder="Ingrese la cantidad de ventiladores a instalar" pattern="^[0-9]+"></div>
+        </div>
+    </div>
+       </div>
+       <div class="total"><button onclick="suma()" >Calcular Total</button></div>
+       <div class="totaliva"><button onclick="iva()">Calcular total + IVA</button></div>
+       
+       <div class="total-container"><h1 class="text-total">TOTAL:</h1><h1 class="total-number"></h1></div>
+       <div class="total-iva-container"><h1 class="text-total">TOTAL con IVA:</h1><h1 class="total-number2"></h1></div>
+     
+       </form>
+   </section>
+   <footer class="footer-coti">
+    <nav id="contacto">
+        <ul class="nav3">
+            <li class="lista3"><a class="botonerainf" href="">Info</a></li>
+            <li class="lista3"><a class="botonerainf" href="">Sitios</a></li>
+            <li class="lista3"><a class="botonerainf" href="cotizacion.html">Cotizaciones</a></li>
+            <li class="lista3"><a class="botonerainf" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav> 
+   <div id="imagen"></div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/coti.js"></script>  
+</body>
+</html>
