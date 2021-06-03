@@ -1,5 +1,5 @@
 function validar(){
-	var usuarioReg=['^(?=\\w*[A-Z])(?=\\w*[a-z])(?=\\w*\\d)\\S{8,16}$', "El usuario debe contener al menos 1 mayuscula , 1 minuscula y un número"]
+	var usuarioReg=['^(?=\\w*[A-Z])(?=\\w*[a-z])(?=\\w*\\d)\\S{8,16}$', "El usuario debe contener al menos 1 mayuscula , 1 minuscula , un número y entre 8 y 16 caractetes Ej:JuanLio001 "]
     
 var userM=document.querySelector("#user");
 var pass=document.querySelector("#pass");
