@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
     <title>Boxes </title>
     
 </head>
@@ -26,9 +27,17 @@
            <h1>Bill Withers - Aint No Sunshine</h1>
        </div>
        <div>
-    <video class="bill" src="aintnosunshine.mp4" controls></video>
+    <video class="bill" src="aintnosunshine.mp4" ></video>
+    <nav class="controlador">
+        <ul class="reproductor">
+            <li class="Play"><a href="#"  onclick="reproducir()"><i class="fab fa-google-play" id="repr"  ></i></a></li>
+            <li class="Stop"><a href="#" onclick="reiniciar()"><i class="fas fa-stop"></i></a></li>
+            <li class="Rew"><a href="#" onclick="forward(-10)"><i class="fas fa-backward"></i></a></li>
+            <li class="Fwd"><a href="#"onclick="forward(10)" ><i class="fas fa-forward"></i></a></i></li>
+        </ul>
+    </nav>
 </div>
-<div>
+<div class="caja-letras">
     <h3 class="letra-h3">Letra</h3>
     <p class="letra-p">Ain't no sunshine when she's gone
         It's not warm when she's away
@@ -61,7 +70,16 @@
     <h1>The Meters - Cissy Strut</h1>
 </div>
 <div  >
-<video class="meters" src="themeters.mp4" controls></video>
+<video class="meters" src="themeters.mp4" ></video>
+<nav class="controlador">
+    <ul class="reproductor">
+        <li class="Play"><a href="#"  onclick="reproducir2()"><i class="fab fa-google-play" id="repr1"  ></i></a></li>
+        <li class="Stop"><a href="#" onclick="reiniciar2()"><i class="fas fa-stop"></i></a></li>
+        <li class="Rew"><a href="#" onclick="forward2(-10)"><i class="fas fa-backward"></i></a></li>
+        <li class="Fwd"><a href="#"onclick="forward2(10)" ><i class="fas fa-forward"></i></a></i></li>
+    </ul>
+</nav>
+</div>
 </div>
 
 </section>
@@ -74,6 +92,9 @@
          <li class="lista3"><a class="botonerainf" href="contacto.html">Contacto</a></li>
      </ul>
  </nav> 
-<div id="imagen"></div></footer>     
+<div id="imagen"></div></footer> 
+   
+<script src="js/video.js"></script>
+
 </body>
 </html>
